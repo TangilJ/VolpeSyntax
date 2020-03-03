@@ -121,7 +121,7 @@
 						"3": {
 							"patterns": [
 								{
-									"match": "[a-zA-Z0-9_]*",
+									"match": "[a-zA-Z0-9_]+",
 									"name": "variable.argument.function.volpe"
 								},
 								{

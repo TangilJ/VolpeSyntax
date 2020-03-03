@@ -2,7 +2,7 @@
 
 [<img src="https://img.shields.io/github/license/TheBlocks/VolpeSyntax">](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/LICENSE)
 
-Syntax highlighting for the [Volpe](https://github.com/LHolten/Volpe) language in Visual Studio Code.
+Syntax highlighting support for the [Volpe](https://github.com/LHolten/Volpe) language in Visual Studio Code.
 
 ![Screenshot](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/images/example.png)
 
@@ -11,6 +11,9 @@ Syntax highlighting for the [Volpe](https://github.com/LHolten/Volpe) language i
 Install from the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=Tangil.volpe-syntax), or find `volpe-syntax` in the Extensions pane in VSCode.
 
 ## Changelog
+
+- [0.0.2] - 2020-03-03
+    - Fix multiple argument highlighting for functions.
 
 - [0.0.1] - 2020-03-03
     - Initial release of Volpe Syntax Highlighter.

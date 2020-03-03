@@ -1,9 +1,9 @@
 {
     "name": "volpe-syntax",
     "displayName": "Volpe Syntax Highlighter",
-    "description": "Syntax highlighting for the Volpe language.",
+    "description": "Syntax highlighting support for the Volpe language.",
     "publisher": "Tangil",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "SEE LICENSE IN LICENSE",
     "engines": {
         "vscode": "^1.30.0"
