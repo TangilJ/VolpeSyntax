@@ -6,6 +6,10 @@ Syntax highlighting for the [Volpe](https://github.com/LHolten/Volpe) language i
 
 ![Screenshot](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/images/example.png)
 
+## Installation
+
+Install from the [Visual Studio Marketplace page](https://marketplace.visualstudio.com/items?itemName=Tangil.volpe-syntax), or find `volpe-syntax` in the Extensions pane in VSCode.
+
 ## Changelog
 
 - [0.0.1] - 2020-03-03
