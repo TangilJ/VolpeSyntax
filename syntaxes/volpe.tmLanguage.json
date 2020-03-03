@@ -1,0 +1,197 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Volpe",
+	"scopeName": "source.vlp",
+	"patterns": [
+		{
+			"include": "#top-level"
+		}
+	],
+	"repository": {
+		"escaped_char": {
+			"patterns": [
+				{
+					"name": "constant.character.escape.volpe",
+					"match": "\\\\."
+				}
+			]
+		},
+		"top-level": {
+			"patterns": [
+				{
+					"name": "keyword.control.operator.assignment.volpe",
+					"match": "(=>|=)"
+				},
+				{
+					"name": "keyword.control.operator.conditional.volpe",
+					"match": "->"
+				},
+				{
+					"name": "keyword.control.operator.return.volpe",
+					"match": ":>"
+				},
+				{
+					"name": "keyword.control.operator.map.volpe",
+					"match": "::"
+				},
+				{
+					"name": "keyword.control.operator.range.volpe",
+					"match": "\\.\\."
+				},
+				{
+					"name": "keyword.control.operator.paramless_func.volpe",
+					"match": "\\$"
+				},
+				{
+					"name": "keyword.operator.arithmetic.volpe",
+					"match": "(\\+|-|/|\\*)"
+				},
+				{
+					"name": "keyword.operator.comparison.volpe",
+					"match": "(>|<|>=|<=|==)"
+				},
+				{
+					"name": "string.quoted.double.volpe",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"include": "#escaped_char"
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.volpe",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"include": "#escaped_char"
+						}
+					]
+				},
+				{
+					"name": "constant.numeric.volpe",
+					"match": "\\b([0-9]*[.])?[0-9]+"
+				},
+				{
+					"name": "comment.line.number-sign.volpe",
+					"match": "#.*$"
+				},
+				{
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\b|\\s+)(=)(\\b|\\s+)",
+					"captures": {
+						"1": {
+							"name": "entity.name.variable.volpe"
+						},
+						"3": {
+							"name": "keyword.control.operator.assignment.volpe"
+						}
+					}
+				},
+				{
+					"name": "meta.block",
+					"begin": "(\\{)",
+					"beginCaptures": {
+						"1": {
+							"name": "punctuation.curlybrace.open.volpe"
+						}
+					},
+					"end": "(\\})",
+					"endCaptures": {
+						"1": {
+							"name": "punctuation.curlybrace.open.volpe"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#top-level"
+						}
+					]
+				},
+				{
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\()((?:[a-zA-Z0-9_]*\\s*,\\s*)+(?:[a-zA-Z0-9_]+\\s*))(\\))",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.volpe"
+						},
+						"2": {
+							"name": "punctuation.definition.arguments.begin.volpe"
+						},
+						"3": {
+							"patterns": [
+								{
+									"match": "[a-zA-Z0-9_]*",
+									"name": "variable.argument.function.volpe"
+								},
+								{
+									"match": ",",
+									"name": "punctuation.separator.arguments.volpe"
+								}
+							]
+						},
+						"4": {
+							"name": "punctuation.definition.arguments.end.volpe"
+						}
+					}
+				},
+				{
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\()([a-zA-Z0-9_]+\\s*)(\\))",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.volpe"
+						},
+						"2": {
+							"name": "punctuation.definition.arguments.begin.volpe"
+						},
+						"3": {
+							"name": "variable.argument.function.volpe"
+						},
+						"4": {
+							"name": "punctuation.definition.arguments.end.volpe"
+						}
+					}
+				},
+				{
+					"match": "(\\()((?:\\s*[a-zA-Z_][a-zA-Z0-9_]*\\s*,\\s*)+(?:[a-zA-Z_][a-zA-Z0-9_]*\\s*))(\\))\\s*(=>)\\s*",
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.parameters.begin.volpe"
+						},
+						"2": {
+							"patterns": [
+								{
+									"match": "[a-zA-Z_][a-zA-Z0-9_]*",
+									"name": "variable.parameter.function.volpe"
+								},
+								{
+									"match": ",",
+									"name": "punctuation.separator.arguments.volpe"
+								}
+							]
+						},
+						"3": {
+							"name": "punctuation.definition.parameters.end.volpe"
+						},
+						"4": {
+							"name": "keyword.control.operator"
+						}
+					},
+					"name": "meta.function.volpe"
+				},
+				{
+					"match": "\\s*([a-zA-Z_][a-zA-Z0-9_]*)\\s*(=>)\\s*",
+					"captures": {
+						"1": {
+							"name": "variable.parameter.function.volpe"
+						},
+						"2": {
+							"name": "keyword.control.operator"
+						}
+					},
+					"name": "meta.function.volpe"
+				}
+			]
+		}
+	}
+}

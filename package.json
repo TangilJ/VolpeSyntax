@@ -1,0 +1,25 @@
+{
+    "name": "volpe-syntax",
+    "displayName": "Volpe Syntax Highlighter",
+    "description": "Syntax highlighting for the Volpe language.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "volpe",
+            "aliases": ["Volpe", "volpe"],
+            "extensions": [".vlp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "volpe",
+            "scopeName": "source.vlp",
+            "path": "./syntaxes/volpe.tmLanguage.json"
+        }]
+    }
+}
