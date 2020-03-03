@@ -2,24 +2,46 @@
     "name": "volpe-syntax",
     "displayName": "Volpe Syntax Highlighter",
     "description": "Syntax highlighting for the Volpe language.",
+    "publisher": "Tangil",
     "version": "0.0.1",
+    "license": "SEE LICENSE IN LICENSE",
     "engines": {
-        "vscode": "^1.42.0"
+        "vscode": "^1.30.0"
     },
+    "preview": true,
     "categories": [
         "Programming Languages"
     ],
+    "keywords": [
+        "Volpe",
+        "syntax",
+        "highlight"
+    ],
     "contributes": {
-        "languages": [{
-            "id": "volpe",
-            "aliases": ["Volpe", "volpe"],
-            "extensions": [".vlp"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "volpe",
-            "scopeName": "source.vlp",
-            "path": "./syntaxes/volpe.tmLanguage.json"
-        }]
-    }
+        "languages": [
+            {
+                "id": "volpe",
+                "aliases": [
+                    "Volpe",
+                    "volpe"
+                ],
+                "extensions": [
+                    ".vlp"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "volpe",
+                "scopeName": "source.vlp",
+                "path": "./syntaxes/volpe.tmLanguage.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TheBlocks/VolpeSyntax.git"
+    },
+    "homepage": "https://github.com/TheBlocks/VolpeSyntax/blob/master/README.md"
 }
