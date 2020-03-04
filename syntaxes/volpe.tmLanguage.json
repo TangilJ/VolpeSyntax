@@ -20,7 +20,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.operator.assignment.volpe",
-					"match": "(=>|=)"
+					"match": "(=>|=|\\+=|-=|\\*=|/=)"
 				},
 				{
 					"name": "keyword.control.operator.conditional.volpe",
@@ -102,7 +102,7 @@
 					"match": "#.*$"
 				},
 				{
-					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\b|\\s+)(=)(\\b|\\s+)",
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\b|\\s+)(=|\\+=|-=|\\*=|/=)(\\b|\\s+)",
 					"captures": {
 						"1": {
 							"name": "entity.name.variable.volpe"
