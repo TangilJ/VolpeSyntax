@@ -12,6 +12,9 @@ Install from the [Visual Studio Marketplace page](https://marketplace.visualstud
 
 ## Changelog
 
+- [0.0.3] - 2020-03-04
+    - Fix function calls with whitespace around opening bracket.
+
 - [0.0.2] - 2020-03-03
     - Fix multiple argument highlighting for functions.
 

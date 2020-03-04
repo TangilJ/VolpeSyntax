@@ -110,7 +110,7 @@
 					]
 				},
 				{
-					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\()((?:[a-zA-Z0-9_]*\\s*,\\s*)+(?:[a-zA-Z0-9_]+\\s*))(\\))",
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)\\s*(\\()\\s*((?:[a-zA-Z0-9_]*\\s*,\\s*)+(?:[a-zA-Z0-9_]+\\s*))(\\))",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.volpe"
@@ -136,7 +136,7 @@
 					}
 				},
 				{
-					"match": "([a-zA-Z_][a-zA-Z0-9_]*)(\\()([a-zA-Z0-9_]+\\s*)(\\))",
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)\\s*(\\()\\s*([a-zA-Z0-9_]+\\s*)(\\))",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.volpe"
@@ -174,7 +174,7 @@
 							"name": "punctuation.definition.parameters.end.volpe"
 						},
 						"4": {
-							"name": "keyword.control.operator"
+							"name": "keyword.control.operator.volpe"
 						}
 					},
 					"name": "meta.function.volpe"
