@@ -3,7 +3,7 @@
     "displayName": "Volpe Syntax Highlighter",
     "description": "Syntax highlighting support for the Volpe language.",
     "publisher": "Tangil",
-    "version": "0.0.4",
+    "version": "0.5.0",
     "license": "SEE LICENSE IN LICENSE",
     "engines": {
         "vscode": "^1.30.0"

@@ -20,7 +20,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.operator.assignment.volpe",
-					"match": "(=>|=|\\+=|-=|\\*=|/=)"
+					"match": "(\\b|\\s+)(=>|=|\\+=|-=|\\*=|/=)(\\b|\\s+)"
 				},
 				{
 					"name": "keyword.control.operator.conditional.volpe",
@@ -48,7 +48,7 @@
 				},
 				{
 					"name": "keyword.operator.comparison.volpe",
-					"match": "(>|<|>=|<=|==)"
+					"match": "(\\b|\\s+)(>|<|>=|<=|==|!=)(\\b|\\s+)"
 				},
 				{
 					"name": "support.function.volpe",
