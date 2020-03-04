@@ -1,8 +1,9 @@
 # Volpe Syntax Highlighter
 
-[<img src="https://img.shields.io/github/license/TheBlocks/VolpeSyntax">](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/TheBlocks/VolpeSyntax)](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/LICENSE)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/Tangil.volpe-syntax)](https://marketplace.visualstudio.com/items?itemName=Tangil.volpe-syntax)
 
-Syntax highlighting support for the [Volpe](https://github.com/LHolten/Volpe) language in Visual Studio Code.
+Syntax highlighting support for the [Volpe language](https://github.com/LHolten/Volpe) in Visual Studio Code.
 
 ![Screenshot](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/images/example.png)
 
@@ -12,16 +13,8 @@ Install from the [Visual Studio Marketplace page](https://marketplace.visualstud
 
 ## Changelog
 
-- [0.0.3] - 2020-03-04
-    - Fix function calls with whitespace around opening bracket.
-    - Add expression support in function arguments.
-
-- [0.0.2] - 2020-03-03
-    - Fix multiple argument highlighting for functions.
-
-- [0.0.1] - 2020-03-03
-    - Initial release of Volpe Syntax Highlighter.
+See [CHANGELOG.md](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/CHANGELOG.md) for changes between versions.
 
 ## License
 
-This project is licensed under the BSD 2-Clause "Simplified" License. See the LICENSE file for details.
+This project is licensed under the BSD 2-Clause "Simplified" License. See the [LICENSE](https://raw.githubusercontent.com/TheBlocks/VolpeSyntax/master/LICENSE) file for details.
