@@ -51,6 +51,14 @@
 					"match": "(>|<|>=|<=|==)"
 				},
 				{
+					"name": "support.function.volpe",
+					"match": "\\b(print)\\b"
+				},
+				{
+					"name": "punctuation.terminator.statement.volpe",
+					"match": ";"
+				},
+				{
 					"name": "string.quoted.double.volpe",
 					"begin": "\"",
 					"end": "\"",

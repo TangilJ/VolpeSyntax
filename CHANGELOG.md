@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### [0.0.4] - 2020-03-04
 ### Added
 - Add multi-line comment support.
+- Add semicolon support.
+- Add print keyword support.
 
 ### [0.0.3] - 2020-03-04
 #### Fixed
