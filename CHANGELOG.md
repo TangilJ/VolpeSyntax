@@ -11,6 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Add semicolon support.
 - Add print keyword.
 - Add in-place assignment operators.
+- Add tuple assignment.
+
 
 ### [0.0.3] - 2020-03-04
 #### Fixed
