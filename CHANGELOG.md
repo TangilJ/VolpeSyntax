@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## Pre-release
 
+### [0.6.0] - 2020-03-15
+#### Added
+- Add `@` recursion operator.
+- Add `~` int to float convert operator.
+- Add `&&`, `||`, and `!` logic operators.
+
 ### [0.5.0] - 2020-03-04
 Note: Using [semantic versioning](https://semver.org/spec/v2.0.0.html) from now on.
 #### Added
