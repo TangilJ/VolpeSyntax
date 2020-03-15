@@ -60,7 +60,7 @@
 				},
 				{
 					"name": "keyword.operator.arithmetic.volpe",
-					"match": "(\\+|-|/|\\*)"
+					"match": "(\\+|-|/|\\*|%)"
 				},
 				{
 					"name": "keyword.operator.comparison.volpe",
